@@ -1,12 +1,11 @@
 ﻿{
-  "Version": "12.4.1",
-  "Name": "upload",
-  "DestinationType": "ImageUploader",
+  "Version": "13.2.1",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
   "RequestMethod": "POST",
-  "RequestURL": "https://YOUR_DOMAIN_HERE/upload.php",
+  "RequestURL": "https://example.com/upload.php",
   "Body": "MultipartFormData",
   "Arguments": {
-    "pass": "secret1"
+    "key": "securedkey"
   },
-  "FileFormName": "sharex",
+  "FileFormName": "upload"
 }
