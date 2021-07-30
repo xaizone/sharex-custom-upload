@@ -1,0 +1,11 @@
+﻿{
+  "Version": "13.2.1",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://example.com/upload.php",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "key": "CHANGEME"
+  },
+  "FileFormName": "upload"
+}
