@@ -8,7 +8,7 @@ PHP-based ShareX Custom uploader, easy to configure and use.
 2. Upload `upload.php` and `config.php` to your web server.
 
 ### ShareX
-1. Add `upload.sxcu` to your ShareX Custom Uploaders.
+1. Add `sharex.sxcu` to your ShareX Custom Uploaders.
 2. Adjust `key` to match your `config.php`.
 3. Change `example.com` to your domain.
 
