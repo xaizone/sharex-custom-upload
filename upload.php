@@ -6,7 +6,7 @@ if(isset($_FILES['upload']['name']) && $_POST['key'] == $config['secure_key'])
     $upload_type = pathinfo($_FILES['upload']['name'], PATHINFO_EXTENSION);
     if (move_uploaded_file($_FILES['upload']['tmp_name'], $filename.'.'.$upload_type))
     {
-        echo $config['output_url'].$filename.'.'.$upload_type;
+        echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http").'://'.$_SERVER['HTTP_HOST'].'/'.$filename.'.'.$upload_type;
     }
 }
 else 
