@@ -1,6 +1,6 @@
 <?php
-$config = include('config.php');
-if(isset($_FILES['upload']['name']) && $_POST['key'] == $config['secure_key'])
+define('KEY', "CHANGEME");
+if(isset($_FILES['upload']['name']) && $_POST['key'] == KEY)
 {
     $filename = bin2hex(openssl_random_pseudo_bytes(12));
     $upload_type = pathinfo($_FILES['upload']['name'], PATHINFO_EXTENSION);
@@ -11,6 +11,6 @@ if(isset($_FILES['upload']['name']) && $_POST['key'] == $config['secure_key'])
 }
 else 
 {
-    echo 'invalid file or password';
+    echo 'invalid file or key';
 }
 ?>
